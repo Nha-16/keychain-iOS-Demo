@@ -13,6 +13,10 @@
 		494FCFF32740E87800DA2D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494FCFF12740E87800DA2D05 /* Main.storyboard */; };
 		494FCFF52740E87D00DA2D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494FCFF42740E87D00DA2D05 /* Assets.xcassets */; };
 		494FCFF82740E87D00DA2D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494FCFF62740E87D00DA2D05 /* LaunchScreen.storyboard */; };
+		494FD0002740ED3B00DA2D05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FCFFF2740ED3B00DA2D05 /* LoginViewController.swift */; };
+		494FD0022740ED4C00DA2D05 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FD0012740ED4C00DA2D05 /* RegisterViewController.swift */; };
+		494FD0082740FE8900DA2D05 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FD0062740FE8900DA2D05 /* KeychainPasswordItem.swift */; };
+		494FD0092740FE8900DA2D05 /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FD0072740FE8900DA2D05 /* KeychainConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		494FCFF42740E87D00DA2D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		494FCFF72740E87D00DA2D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		494FCFF92740E87D00DA2D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494FCFFF2740ED3B00DA2D05 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		494FD0012740ED4C00DA2D05 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		494FD0062740FE8900DA2D05 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		494FD0072740FE8900DA2D05 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		494FCFEA2740E87800DA2D05 /* iOSKeychainDemo */ = {
 			isa = PBXGroup;
 			children = (
-				494FCFEB2740E87800DA2D05 /* AppDelegate.swift */,
-				494FCFED2740E87800DA2D05 /* SceneDelegate.swift */,
-				494FCFEF2740E87800DA2D05 /* ViewController.swift */,
+				494FD0052740FE5200DA2D05 /* Keychain */,
+				494FD0042740ED6700DA2D05 /* App Delegate */,
+				494FD0032740ED5A00DA2D05 /* Controller */,
 				494FCFF12740E87800DA2D05 /* Main.storyboard */,
 				494FCFF42740E87D00DA2D05 /* Assets.xcassets */,
 				494FCFF62740E87D00DA2D05 /* LaunchScreen.storyboard */,
 				494FCFF92740E87D00DA2D05 /* Info.plist */,
 			);
 			path = iOSKeychainDemo;
+			sourceTree = "<group>";
+		};
+		494FD0032740ED5A00DA2D05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				494FCFEF2740E87800DA2D05 /* ViewController.swift */,
+				494FCFFF2740ED3B00DA2D05 /* LoginViewController.swift */,
+				494FD0012740ED4C00DA2D05 /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		494FD0042740ED6700DA2D05 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				494FCFEB2740E87800DA2D05 /* AppDelegate.swift */,
+				494FCFED2740E87800DA2D05 /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		494FD0052740FE5200DA2D05 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				494FD0072740FE8900DA2D05 /* KeychainConfiguration.swift */,
+				494FD0062740FE8900DA2D05 /* KeychainPasswordItem.swift */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494FD0002740ED3B00DA2D05 /* LoginViewController.swift in Sources */,
+				494FD0022740ED4C00DA2D05 /* RegisterViewController.swift in Sources */,
 				494FCFF02740E87800DA2D05 /* ViewController.swift in Sources */,
 				494FCFEC2740E87800DA2D05 /* AppDelegate.swift in Sources */,
 				494FCFEE2740E87800DA2D05 /* SceneDelegate.swift in Sources */,
+				494FD0092740FE8900DA2D05 /* KeychainConfiguration.swift in Sources */,
+				494FD0082740FE8900DA2D05 /* KeychainPasswordItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
